@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
       },
       child: Scaffold(
           key: _scaffoldKey,
-          appBar: header('Shop Mart', _scaffoldKey,showCartIcon,context),
+          appBar: header('Shree Shyam Auto Parts', _scaffoldKey,showCartIcon,context),
           drawer: sidebar(context),
           body: Container(
             child: CustomScrollView(
