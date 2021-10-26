@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login_signup_ui_starter/theme.dart';
+import 'package:app_frontend/theme.dart';
 
 class CheckBox extends StatefulWidget {
   final String text;

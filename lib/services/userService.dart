@@ -101,13 +101,16 @@ class UserService{
       case "ERROR_EMAIL_ALREADY_IN_USE":
         {
           statusCode = 400;
+
           msg = "Email ID already existed";
+
         }
         break;
       case "ERROR_WRONG_PASSWORD":
         {
           statusCode = 400;
           msg = "Password is wrong";
+
         }
     }
   }

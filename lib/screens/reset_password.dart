@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:login_signup_ui_starter/screens/login.dart';
-import 'package:login_signup_ui_starter/theme.dart';
-import 'package:login_signup_ui_starter/widgets/primary_button.dart';
-import 'package:login_signup_ui_starter/widgets/reset_form.dart';
+import 'package:app_frontend/screens/login.dart';
+import 'package:app_frontend/theme.dart';
+import 'package:app_frontend/widgets/primary_button.dart';
+import 'package:app_frontend/widgets/reset_form.dart';
 
 class ResetPasswordScreen extends StatelessWidget {
   @override

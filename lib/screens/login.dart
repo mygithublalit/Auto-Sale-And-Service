@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:login_signup_ui_starter/screens/reset_password.dart';
-import 'package:login_signup_ui_starter/screens/signup.dart';
-import 'package:login_signup_ui_starter/theme.dart';
-import 'package:login_signup_ui_starter/widgets/login_form.dart';
-import 'package:login_signup_ui_starter/widgets/login_option.dart';
-import 'package:login_signup_ui_starter/widgets/primary_button.dart';
+import 'package:app_frontend/screens/reset_password.dart';
+import 'package:app_frontend/screens/signup.dart';
+import 'package:app_frontend/theme.dart';
+import 'package:app_frontend/widgets/login_form.dart';
+import 'package:app_frontend/widgets/login_option.dart';
+import 'package:app_frontend/widgets/primary_button.dart';
 
 class LogInScreen extends StatelessWidget {
   @override
