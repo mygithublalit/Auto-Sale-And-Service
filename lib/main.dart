@@ -26,23 +26,23 @@ import 'package:app_frontend/pages/adminPanel.dart';
 
 bool firstTime;
 
-Future<void> main() async {
+Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
   SharedPreferences prefs = await SharedPreferences.getInstance();
   firstTime = (prefs.getBool('initScreen') ?? false);
-  if (!firstTime) {
+  if(!firstTime){
     prefs.setBool('initScreen', true);
   }
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(Main());
+  runApp(
+    Main()
+  );
 }
 
 class Main extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      // firstTime ? '/' : '/onBoarding'
       initialRoute: '/admin',
       routes: {
         '/': (context) => Start(),
@@ -69,8 +69,10 @@ class Main extends StatelessWidget {
         "/admin": (context) => AdminPanel()
       },
       theme: ThemeData(
-          bottomSheetTheme:
-              BottomSheetThemeData(backgroundColor: Colors.white)),
+        bottomSheetTheme: BottomSheetThemeData(
+          backgroundColor: Colors.white
+        )
+      ),
     );
   }
 }
