@@ -34,14 +34,14 @@ List<SliderModel> getSlides(){
   List<SliderModel> slides = new List<SliderModel>();
   SliderModel sliderModel = new SliderModel();
 
-  sliderModel.setTitle('Shree Shyam Auto Parts');
-  sliderModel.setDesc('Welcome to Auto sales and services...! Buy our Products easily and get access to app only exclusives.');
-  sliderModel.setImageAssetPath('assets/frame.png');
+  sliderModel.setTitle('Shop Mart');
+  sliderModel.setDesc('Welcome to Shop Mart! Buy our Products easily and get access to app only exclusives.');
+  sliderModel.setImageAssetPath('assets/sIcon.png');
   slides.add(sliderModel);
 
   sliderModel = new SliderModel();
 
-  sliderModel.setTitle('Shopping Cart');
+  sliderModel.setTitle('Shopping Bag');
   sliderModel.setDesc('Add products to your shopping cart, and check them out later.' );
   sliderModel.setImageAssetPath('assets/onBoarding/shopping-bag.png');
   slides.add(sliderModel);

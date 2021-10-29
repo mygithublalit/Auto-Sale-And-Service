@@ -44,13 +44,13 @@ class Start extends StatelessWidget{
             child: Column(
               children: <Widget>[
                 SizedBox(height: SizeConfig.safeBlockVertical * 8),
-                Image.asset('assets/frame.png', height: SizeConfig.safeBlockVertical * 20),
+                Image.asset('assets/sIcon.png', height: SizeConfig.safeBlockVertical * 20),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0.0, 40.0, 0.0, 0.0),
                   child: FittedBox(
                     fit: BoxFit.fitWidth,
                     child: Text(
-                        'Welcome to Auto sales and services...',
+                        'Welcome to Shop Mart',
                         style: TextStyle(
                           fontSize: SizeConfig.safeBlockHorizontal * 8,
                           fontWeight: FontWeight.bold,
