@@ -1,7 +1,6 @@
 import 'package:app_frontend/components/modals/internetConnection.dart';
 import 'package:connectivity/connectivity.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -68,11 +67,8 @@ class UserService{
       statusCode = 200;
 
     }).catchError((error){
-     handleAuthErrors(error);
-
+      handleAuthErrors(error);
     });
-
-
   }
 
   Future<String> getUserId() async{
@@ -85,7 +81,7 @@ class UserService{
     String email = userValues['email'];
     String password = userValues['password'];
 
-   await _auth.createUserWithEmailAndPassword(email: email, password: password).then((dynamic user){
+    await _auth.createUserWithEmailAndPassword(email: email, password: password).then((dynamic user){
       String uid = user.user.uid;
       _firestore.collection('users').add({
         'fullName': userValues['fullName'],
@@ -95,33 +91,26 @@ class UserService{
 
       statusCode = 200;
     }).catchError((error){
-     handleAuthErrors(error);
-
+      handleAuthErrors(error);
     });
-
   }
+
   void handleAuthErrors(error){
     String errorCode = error.code;
     switch(errorCode){
       case "ERROR_EMAIL_ALREADY_IN_USE":
         {
           statusCode = 400;
-
           msg = "Email ID already existed";
-
-
         }
         break;
       case "ERROR_WRONG_PASSWORD":
         {
           statusCode = 400;
           msg = "Password is wrong";
-
         }
     }
-
   }
-
 
   String capitalizeName(String name){
     name = name[0].toUpperCase()+ name.substring(1);

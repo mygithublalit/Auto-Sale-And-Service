@@ -45,7 +45,7 @@ class _ContactUsState extends State<ContactUs> {
                   ),
                 ),
                 subtitle: Text(
-                  'Shree shyam auto parts Mubarakpur - 276406, Uttar Pradesh',
+                  '1412 Steiner Street, San Francisco, CA, 94115',
                   style: TextStyle(
                     fontSize:16.0,
                     fontWeight: FontWeight.bold
@@ -65,7 +65,7 @@ class _ContactUsState extends State<ContactUs> {
                   ),
                 ),
                 trailing: Text(
-                  'Shreeshyam@gmail.com',
+                  'office@shopertino.com',
                   style: TextStyle(
                     fontSize: 20.0,
                     color: Colors.grey
@@ -76,7 +76,7 @@ class _ContactUsState extends State<ContactUs> {
             Padding(
               padding: EdgeInsets.only(top: 20.0, left: 10.0),
               child: Text(
-                'Our business hour are Mon - Sun, 9am - 6pm, IST'
+                'Our business hour are Mon - Fri, 10am - 6pm, PST'
               ),
             ),
             SizedBox(height: 20.0),
