@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
       },
       child: Scaffold(
           key: _scaffoldKey,
-          appBar: header('Shop Mart', _scaffoldKey,showCartIcon,context),
+          appBar: header('ShreeSyam', _scaffoldKey,showCartIcon,context),
           drawer: sidebar(context),
           body: Container(
             child: CustomScrollView(
@@ -96,7 +96,7 @@ class _HomeState extends State<Home> {
                       padding: EdgeInsets.only(top: 30.0,bottom: 15.0),
                       child: Center(
                         child: Text(
-                          'Featured',
+                          'Products',
                           style: TextStyle(
                             fontSize: 30.0,
                             fontWeight: FontWeight.bold,

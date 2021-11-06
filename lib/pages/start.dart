@@ -50,7 +50,7 @@ class Start extends StatelessWidget{
                   child: FittedBox(
                     fit: BoxFit.fitWidth,
                     child: Text(
-                        'Welcome to Shop Mart',
+                        'Welcome to ShreeSyam',
                         style: TextStyle(
                           fontSize: SizeConfig.safeBlockHorizontal * 8,
                           fontWeight: FontWeight.bold,
@@ -65,7 +65,7 @@ class Start extends StatelessWidget{
                     horizontal: SizeConfig.safeBlockHorizontal * 12.5,
                   ),
                   child: Text(
-                    'Shop & get updates on new Products and sales with our mobile app',
+                    'Shop & updates on new Products and sales with our mobile app',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontFamily: 'NovaSquare',
